@@ -11,11 +11,11 @@
 3.使用本仓库中的tasks.py文件替换掉ultralytics-main/ultralytics/nn/tasks.py文件
 4.在ultralytics-main环境下，运行以下代码：
 
-'''
+```
 from ultralytics import YOLO
 
 if __name__ == "__main__":
     model = YOLO("yolo11n-scissors.yaml").load("yolo11n.pt")
 
     results = model.train(data="coco.yaml", imgsz=640, epochs=300, optimizer="SGD", lr0=0.01, lrf=0.0001)
-'''
+```
