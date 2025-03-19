@@ -21,5 +21,5 @@ from ultralytics import YOLO
 if __name__ == "__main__":
     model = YOLO("yolo11n-scissors.yaml").load("yolo11n.pt")
 
-    results = model.train(data="coco.yaml", imgsz=640, epochs=300, optimizer="SGD", lr0=0.01, lrf=0.0001)
+    results = model.train(data="coco.yaml", imgsz=640, epochs=300)
 ```
